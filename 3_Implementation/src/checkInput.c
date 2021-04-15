@@ -1,4 +1,4 @@
-#include "complement.h"
+//#include "complement.h"
 int checkBinary(int n){
 	while (n > 0){
 		if(((n%10) == 0) || ((n%10) == 1)){
@@ -26,7 +26,7 @@ int checkOctal(int n){
 
 int checkDecimal(int n){
 	while(n > 0){
-		if(((n % 10) >= 0) && ((n % 10) < 10)){
+		if((n % 0x0a) >= 0){
 			n = n/10;
 		}
 		else{
@@ -39,7 +39,7 @@ int checkDecimal(int n){
 
 int checkHexadecimal(int n){
 	while(n > 0){
-		if(((n % 0x10) >= 0x00) && ((n % 0x10) < 0x10)){
+		if(((n % 0x10) >= 0x00) && ((n % 0x10) <= 0x0f)){
 			n = n/0x10;
 		}
 		else{
