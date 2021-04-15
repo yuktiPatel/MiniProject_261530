@@ -47,6 +47,30 @@ void test_addOneToOctal(void)
   TEST_ASSERT_EQUAL(1770, addOneToOctal(1767));
 }
 
+void test_checkBinary(void)
+{
+  TEST_ASSERT_EQUAL(1, checkBinary(10101));
+  TEST_ASSERT_EQUAL(-1, checkBinary(1021010));
+}
+
+void test_checkOctal(void)
+{
+  TEST_ASSERT_EQUAL(1, checkOctal(1256));
+  TEST_ASSERT_EQUAL(-1, checkOctal(198));
+}
+
+void test_checkDecimal(void)
+{
+  TEST_ASSERT_EQUAL(1, checkDecimal(107));
+  TEST_ASSERT_EQUAL(1, checkDecimal(101));
+}
+
+void test_checkHexadecimal(void)
+{
+  TEST_ASSERT_EQUAL(1, checkHexadecimal(0x10a));
+  TEST_ASSERT_EQUAL(1, checkHexadecimal(0x11));
+}
+
 int test_main(void){
   UNITY_BEGIN();
   RUN_TEST(test_r1Complement);
@@ -55,5 +79,10 @@ int test_main(void){
   RUN_TEST(test_calculateHexDigits);
   RUN_TEST(test_addOneToBinary);
   RUN_TEST(test_addOneToOctal);  
+  RUN_TEST(test_checkBinary);  
+  RUN_TEST(test_checkOctal);
+  RUN_TEST(test_checkDecimal);
+  RUN_TEST(test_checkHexadecimal);
+ 
   return UNITY_END();  
 }
