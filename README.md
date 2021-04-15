@@ -15,7 +15,7 @@
 
 | SF ID| Name | Features | Issues Raised | Issues Resolved | No of Test Cases | No of Test Cases Passed |
 | --------------- | --------------- | ----------- | -------------- | ------------- | -------------- | ------------ |
-| 261530 | Yukti Patel | F_01, F_02, F_03, F_04, F_05 ,F_06  |  |  | 10 | 10 |
+| 261530 | Yukti Patel | F_01, F_02, F_03, F_04, F_05 ,F_06, F_07, F_08, F_09  |  |  | 10 | 10 |
 
 
 |Feature ID | Feature |
@@ -26,3 +26,6 @@
 | F_04 | Option to select 9 or 10 complement for decimal Number System |
 | F_05 | Option to select 15 or 16 complement for hexadecimal Number System |
 | F_06 | Feature to check wheather input is valid or not |
+| F_07 | Check wheather base is correctly entered or not |
+| F_08 | Check wheather the complement for that base is correctly entered or not |
+| F_09 | Check wheather the number is correctly entered or not |
