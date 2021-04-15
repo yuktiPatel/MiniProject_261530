@@ -1,6 +1,11 @@
-#include "complement.h"
+//#include "complement.h"
+extern int calculateHexDigits(int n);
+extern int calculateDigits(int n);
+extern int addOneToOctal(int num1);
+extern int addOneToBinary(int n);
+
 int r1Complement(int n, int base){
-	int max=0,len;
+	int len;
 	if(base == 16){
 		int max=0x00;
 		len = calculateHexDigits(n);
@@ -10,6 +15,7 @@ int r1Complement(int n, int base){
 		return (max-n);
 
 	}
+	int max = 0;
 	len = calculateDigits(n);
 	for(int i=0;i<len;i++){
 		max = max*10 + (base-1);
