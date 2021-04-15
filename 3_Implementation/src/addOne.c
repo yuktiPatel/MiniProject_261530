@@ -1,4 +1,5 @@
-#include "complement.h"
+//#include "complement.h"
+extern int calculateDigits(int n);
 int addOneToBinary(int n){
 	int value,r=10,add=1;
 	int len = calculateDigits(n);
@@ -20,11 +21,12 @@ int addOneToBinary(int n){
 
 int addOneToOctal(int num1)
 {
-    int sum = 0, digit = 0, carry = 0, digit_rank = 1, num2=1;
+    int sum = 0, carry = 0, digit_rank = 1, num2= 1;
 
     
     while (num1 > 0 || num2 > 0 || carry)
     {
+    	int digit;
         
         digit = num1 % 10 + num2 % 10 + carry;
 
