@@ -2,6 +2,10 @@
 
 ![](https://github.com/yuktiPatel/MiniProject_261530/blob/main/Banner.png)
 
+| Build | Code Quality | Unity | Git Inspector |
+| ----- | ------------ | ----- | ------------- |
+| [![C/C++ CI - Build Status](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/c-cpp.yml) | [![Code Quality - Static Code - Cppcheck](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/c-cppcheck.yml/badge.svg)](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/c-cppcheck.yml) [![CI-Coverage](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/code-coverage.yml/badge.svg)](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/code-coverage.yml) | [![Unit Testing - Unity](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/unity.yml/badge.svg)](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/unity.yml) | [![Contribution Check - Git Inspector](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/yuktiPatel/MiniProject_261530/actions/workflows/gitinspector.yml) |
+
 ## Folder Structure
 | Folder|Description | 
 | --------------- | --------------- | 
