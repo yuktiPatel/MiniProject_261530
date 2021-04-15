@@ -18,7 +18,7 @@
 | 261530 | Yukti Patel | F_01, F_02, F_03, F_04, F_05 ,F_06, F_07, F_08, F_09  |  |  | 10 | 10 |
 
 
-|Feature ID | Feature |
+|Feature ID | Features |
 | ------------- | -------------|
 | F_01 | Option to select Number System |
 | F_02 | Option to select 1 or 2 complement for binary Number System |
