@@ -8,6 +8,8 @@ INC_H = -Iinc
       
 TEST_SRC = test/test_main.c test/main_test.c Unity/unity.c
 
+COV_SRC = main_test.c
+
 ifdef OS
 	RM = del/q
 	FixPath = $(subst /,\,$1)
@@ -41,7 +43,21 @@ cppcheck:
 valgrind:
 	valgrind ./$(BUILD_DIR)/$(TEST_PROJECT_NAME).$(EXEC)
 
+coverage:
+	gcc -fprofile-arcs -ftest-coverage $(INC_H) $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(COV_SRC)
+	$(RM) *.$(EXEC)
+	$(RM) *.gcda
+	$(RM) *.gcno
+	$(RM) *.c.gcov
+	$(RM) test_conversion.c
+
+
 clean:
 	$(RM) $(call FixPath, $(BUILD_DIR)/*)
 	rmdir $(BUILD_DIR)
 	rm -rf *.out
+	$(RM) *.gcda
+	$(RM) *.gcno
+	$(RM) *.c.gcov
