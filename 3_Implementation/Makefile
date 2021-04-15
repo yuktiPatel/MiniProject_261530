@@ -34,6 +34,12 @@ test:
 	
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
+	
+cppcheck:
+	cppcheck --enable=all $(SRC) main.c
+
+valgrind:
+	valgrind ./$(BUILD_DIR)/$(TEST_PROJECT_NAME).$(EXEC)
 
 clean:
 	$(RM) $(call FixPath, $(BUILD_DIR)/*)
