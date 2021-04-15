@@ -1,11 +1,12 @@
 PROJECT_NAME = complement
+TEST_PROJECT_NAME = Test_$(PROJECT_NAME)
 BUILD_DIR = Build
-SRC = main_test.c src/complement.c src/addOne.c	src/countDigits.c test/test_main.c src/checkInput.c	
+SRC = src/complement.c src/addOne.c	src/countDigits.c src/checkInput.c	
  
-INC = -IUnity -Itest -Iinc
+INC_T = -IUnity -Itest 
+INC_H = -Iinc
       
-
-TEST = Unity/unity.c
+TEST_SRC = test/test_main.c test/main_test.c Unity/unity.c
 
 ifdef OS
 	RM = del/q
@@ -22,10 +23,14 @@ else
 .PHONY: run clean test doc all
 
 all:$(BUILD_DIR)
-	gcc $(INC) $(SRC) $(TEST) -o $(call FixPath,$(BUILD_DIR)/$(PROJECT_NAME).$(EXEC))
+	gcc $(INC_H) $(SRC) main.c -o $(call FixPath,$(BUILD_DIR)/$(PROJECT_NAME).$(EXEC))
  
 run: 	
 	$(call FixPath,$(BUILD_DIR)/$(PROJECT_NAME).$(EXEC))
+	
+test:
+	gcc $(INC_H) $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJECT_NAME).$(EXEC))
+	./$(call FixPath,$(BUILD_DIR)/$(TEST_PROJECT_NAME).$(EXEC))
 	
 $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
@@ -33,4 +38,3 @@ $(BUILD_DIR):
 clean:
 	$(RM) $(call FixPath, $(BUILD_DIR)/*)
 	rmdir $(BUILD_DIR)
-
