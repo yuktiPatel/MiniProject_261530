@@ -1,5 +1,5 @@
 PROJECT_NAME = complement.out
-SRC = main_test.c src/complement.c src/addOne.c	src/countDigits.c test/test_main.c	
+SRC = main_test.c src/complement.c src/addOne.c	src/countDigits.c test/test_main.c src/countDigits.c	
  
 INC = -IUnity -Itest -Iinc
       
