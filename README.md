@@ -15,7 +15,7 @@
 
 | SF ID| Name | Features | Issues Raised | Issues Resolved | No of Test Cases | No of Test Cases Passed |
 | --------------- | --------------- | ----------- | -------------- | ------------- | -------------- | ------------ |
-| 261530 | Yukti Patel | F_01, F_02, F_03, F_04, F_05 ,F_06  |  |  | 6 | 6 |
+| 261530 | Yukti Patel | F_01, F_02, F_03, F_04, F_05 ,F_06  |  |  | 10 | 10 |
 
 
 |Feature ID | Feature |
