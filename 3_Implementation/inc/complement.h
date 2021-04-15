@@ -56,4 +56,36 @@ int addOneToBinary(int n);
  */
 int addOneToOctal(int num1);
 
+/**
+ * @brief for checking if the number is binary or not
+ * 
+ * @param n 
+ * @return int 
+ */
+int checkBinary(int n);
+
+/**
+ * @brief for checking if the number is octal or not
+ * 
+ * @param n 
+ * @return int 
+ */
+int checkOctal(int n);
+
+/**
+ * @brief for checking if the number is decimal or not
+ * 
+ * @param n 
+ * @return int 
+ */
+int checkDecimal(int n);
+
+/**
+ * @brief for checking if the number is hexadecimal or not
+ * 
+ * @param n 
+ * @return int 
+ */
+int checkHexadecimal(int n);
+
 #endif
