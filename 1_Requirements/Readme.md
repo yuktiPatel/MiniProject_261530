@@ -65,6 +65,7 @@ Radix and Diminished Radix Complement
 | --------------- | --------------- | --------------- | ----------------- |
 | HR01 | User shall be able to choose the number system and complement| Technical | Implemented |
 | HR02 | User shall be able to exit or to continue with the system | Technical |  In progress |
+| HR03 | Inputs from the user shall also be validated | Technical | Implemented |
 
 ## Low Level Requirements
 
@@ -76,3 +77,6 @@ Radix and Diminished Radix Complement
 | LR04 | User shall be able to select 9 or 10 Complement for Decimal Number System | HR01 |  Implemented |
 | LR05 | User shall be able to select 15 or 16 Complement for Hexadecimal Number System | HR01 |  Implemented |
 | LR06 | User shall be able to select whether he want to continue or exit the system | HR02 |  In progress |
+| LR07 | System will check whether the user has inputted correct number system(base) or not | HR03 | Implemented |
+| LR08 | System will check wheater the user has inputted correct complement or not | HR03 | Implemented |
+| LR09 | System will check wheater the user has inputted valid number or not | HR03 | Implemented |
