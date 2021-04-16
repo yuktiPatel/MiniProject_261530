@@ -40,6 +40,10 @@ $(BUILD_DIR):
 cppcheck:
 	cppcheck --enable=all $(SRC) main.c
 
+debug:
+	gcc -I $(INC_H) $(SRC) main.c -g -o $(BUILD_DIR)/$(PROJ_NAME).$(EXEC)
+	gdb $(BUILD_DIR)/$(PROJ_NAME).$(EXEC)
+
 valgrind:
 	valgrind ./$(BUILD_DIR)/$(TEST_PROJECT_NAME).$(EXEC)
 
