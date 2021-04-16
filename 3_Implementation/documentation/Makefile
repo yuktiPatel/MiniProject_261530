@@ -1,0 +1,2 @@
+doc: doxy
+	doxygen ./doxy
