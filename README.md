@@ -33,3 +33,9 @@
 | F_07 | Check wheather base is correctly entered or not |
 | F_08 | Check wheather the complement for that base is correctly entered or not |
 | F_09 | Check wheather the number is correctly entered or not |
+
+## Challanges faced and how it was overcome
+
+| No. | Challange | Solution |
+| ----- | --------- | ---------- |
+| 1. | Have implemented binary and hexadecimal using char but it was using extra memory and also have to build another functions for them | So I have implemented them using integer and have added check conditions to check the input |
